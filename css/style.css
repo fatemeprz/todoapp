@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --width:700px
+}
+body{
+    background-color: rgb(250, 247, 250);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-box{
+    text-align: center;
+    background-color: #fff;
+    width: var(--width);
+    margin: auto;
+    height: 230px;
+    margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 20px gray;
+}
+.inputs input{
+    border: rgb(252, 196, 13) 1px solid;
+    outline: none;
+    font-size: 1.1rem;
+    padding-left: 4px;
+    border-radius: 6px;
+    height: 32px;
+    width: 290px;
+
+}
+.yellow-btn{
+    
+    height: 32px;
+    padding:0px 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(252, 196, 13);
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease-in;
+
+}
+.yellow-btn:hover{
+    background-color: rgb(253, 216, 96);
+}
+.red-btn{
+    height: 32px;
+    padding:0px 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(252, 13, 13);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in;
+
+}
+.red-btn:hover{
+    background-color: rgb(238, 68, 68);
+
+}
+.green-btn{
+    height: 32px;
+    padding:0px 10px;
+    border: none;
+    margin: 0 8px;
+    border-radius: 6px;
+    background-color: rgb(91, 214, 91);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in;
+}
+.green-btn:hover{
+    background-color: rgb(118, 226, 118);
+
+}
+
+@keyframes message-animation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+}
+
+
+.top-box h1{
+    margin-top: 23px;
+    display: inline-block;
+    font-weight: 700;
+}
+.inputs{
+    display: flex;
+    justify-content: space-between;
+    margin: 45px 20px;
+    vertical-align: middle;
+
+}
+
+
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    margin-bottom: 10px;
+    
+}
+
+.message{
+    width: var(--width);
+    text-align: center;
+    visibility: hidden;
+    margin: 25px auto;
+    padding: 5px;
+    border-radius: 8px;
+}
+.table{
+    
+    width: var(--width);
+    margin: auto;
+    text-align: center;
+}
+table{
+    width: 100%;
+    border-radius: 15px;
+
+}
+table tr{
+    background-color: rgb(180, 177, 177);
+
+    
+}
+table th{
+    padding: 12px;
+}
+table th:first-of-type{
+    border-top-left-radius: 10px;
+    
+}
+table th:last-of-type{
+    border-top-right-radius: 10px;
+    
+}
+
+td{
+    background-color:rgb(228, 225, 225);
+    padding: 12px;
+
+    
+    
+
+}
+.task{
+    width: 40%;
+}
